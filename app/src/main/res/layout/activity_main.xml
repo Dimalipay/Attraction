@@ -1,0 +1,103 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#60A0D5"
+    tools:context="com.example.attraction.MainActivity">
+
+    <ImageView
+        android:id="@+id/imageView6"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:scaleType="centerCrop"
+        android:src="@drawable/main_bg_one"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.0" />
+
+    <Button
+        android:id="@+id/btn_start"
+        android:layout_width="260dp"
+        android:layout_height="50dp"
+        android:background="@drawable/btn_bg"
+        android:gravity="center"
+        android:shadowColor="@color/Blue"
+        android:text="@string/button1"
+        android:textSize="18sp"
+        android:textColor="@color/white"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.496"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.632" />
+
+    <Button
+        android:id="@+id/button_quiz"
+        android:layout_width="260dp"
+        android:layout_height="50dp"
+        android:layout_marginBottom="184dp"
+        android:background="@drawable/btn_bg"
+        android:gravity="center"
+        android:shadowColor="#7B1FA2"
+        android:text="@string/quiz"
+        android:textSize="18sp"
+        android:textColor="@color/white"
+        app:layout_constraintBottom_toBottomOf="@+id/imageView6"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/btn_start"
+        app:layout_constraintVertical_bias="0.253" />
+
+    <Button
+        android:id="@+id/button_exit"
+        android:layout_width="150dp"
+        android:layout_height="50dp"
+        android:layout_marginTop="128dp"
+        android:background="@drawable/btn_bg"
+        android:gravity="center"
+        android:shadowColor="#7B1FA2"
+        android:text="@string/exit"
+        android:textSize="18sp"
+        android:textColor="@color/white"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/button_quiz" />
+
+    <TextView
+        android:id="@+id/textView"
+        android:layout_width="345dp"
+        android:layout_height="158dp"
+        android:layout_marginTop="168dp"
+        android:fontFamily="sans-serif-condensed-medium"
+        android:text="@string/title_name"
+        android:textAlignment="center"
+        android:textColor="@color/title1"
+        android:textSize="54sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.495"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <TextView
+        android:id="@+id/textView2"
+        android:layout_width="336dp"
+        android:layout_height="161dp"
+        android:layout_marginTop="165dp"
+        android:layout_marginEnd="5dp"
+        android:fontFamily="sans-serif-condensed-medium"
+        android:text="@string/title_name"
+        android:textAlignment="center"
+        android:textColor="@color/title"
+        android:textSize="54sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.495"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>

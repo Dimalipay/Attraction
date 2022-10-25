@@ -1,0 +1,15 @@
+<resources>
+    <string name="app_name">Attraction</string>
+    <string name="start">Начать</string>
+    <string name="back">Назад</string>
+    <string name="policy"><a href="http://project3908066.tilda.ws/">Политика конфиденциальности</a></string>
+    <string name="exit">Выход</string>
+    <string name="textcontinue">Продолжить</string>
+    <string name="close">Закрыть</string>
+    <string name="button1">Достопримечательности</string>
+    <string name="quiz">Викторина</string>
+    <string name="title_name">Моя земля приднепровье</string>
+
+    <string name="attraction_1">Могилёвская ратуша</string>
+    <string name="attraction_2">Статуя бобра</string>
+</resources>
