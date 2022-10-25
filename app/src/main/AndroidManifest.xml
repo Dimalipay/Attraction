@@ -13,26 +13,34 @@
         android:theme="@style/Theme.Attraction"
         tools:targetApi="31">
         <activity
-            android:name="com.example.attraction.SplashScreen"
-            android:theme="@style/Splash"
-            android:exported="true">
+            android:name=".MainActivity2"
+            android:exported="false">
+            <meta-data
+                android:name="android.app.lib_name"
+                android:value="" />
+        </activity>
+        <activity
+            android:name=".SplashScreen"
+            android:exported="true"
+            android:theme="@style/Splash">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
+
                 <category android:name="android.intent.category.LAUNCHER" />
             </intent-filter>
         </activity>
         <activity
-            android:name="com.example.attraction.MainActivity"
-            android:screenOrientation="fullSensor"
-            android:exported="true">
+            android:name=".MainActivity"
+            android:exported="true"
+            android:screenOrientation="fullSensor">
             <intent-filter>
                 <category android:name="android.intent.category.LAUNCHER" />
             </intent-filter>
         </activity>
         <activity
-            android:name="com.example.attraction.GameLevels"
-            android:screenOrientation="fullSensor"
-            android:exported="true">
+            android:name=".GameLevels"
+            android:exported="true"
+            android:screenOrientation="fullSensor">
             <intent-filter>
                 <category android:name="android.intent.category.LAUNCHER" />
             </intent-filter>

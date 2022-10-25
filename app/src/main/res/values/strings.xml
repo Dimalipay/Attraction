@@ -9,7 +9,10 @@
     <string name="button1">Достопримечательности</string>
     <string name="quiz">Викторина</string>
     <string name="title_name">Моя земля приднепровье</string>
+    <string name="kratk_info">Краткая информация</string>
+    <string name="legend">Легенда</string>
 
     <string name="attraction_1">Могилёвская ратуша</string>
-    <string name="attraction_2">Статуя бобра</string>
+    <string name="attraction_1_kr">тут должны быть краткая информация</string>
+    <string name="attraction_1_leg">тут должна быть легенда</string>
 </resources>
