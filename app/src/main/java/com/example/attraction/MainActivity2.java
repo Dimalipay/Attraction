@@ -12,7 +12,7 @@ import android.widget.TextView;
 public class MainActivity2 extends AppCompatActivity {
 
     ImageView img;
-    TextView tv1;
+    TextView tv1, tv3;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -21,13 +21,16 @@ public class MainActivity2 extends AppCompatActivity {
 
         img = findViewById(R.id.iv3);
         tv1 = findViewById(R.id.tv1);
+        tv3 = findViewById(R.id.tv3);
 
         Intent intent = getIntent();
         String name = intent.getExtras().getString("Name");
+        String info = intent.getExtras().getString("Info");
         int image = intent.getExtras().getInt("Image");
 
         img.setImageResource(image);
         tv1.setText(name);
+        tv3.setText(info);
 
         Button button_back = (Button) findViewById(R.id.button_back);
         button_back.setOnClickListener(new View.OnClickListener() {

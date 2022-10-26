@@ -12,6 +12,7 @@
     app:cardCornerRadius="20dp"
     app:cardElevation="10dp"
     app:cardMaxElevation="12dp"
+    android:orientation="vertical"
     app:cardPreventCornerOverlap="true"
     app:cardUseCompatPadding="true">
 

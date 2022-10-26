@@ -21,7 +21,6 @@ public class MainActivity extends AppCompatActivity {
         setContentView(R.layout.activity_main);
 
         Button button = (Button)findViewById(R.id.btn_start);
-
         button.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
@@ -34,8 +33,20 @@ public class MainActivity extends AppCompatActivity {
             }
         });
 
-        Button button_exit = (Button)findViewById(R.id.button_exit);
+        Button button_quiz = (Button)findViewById(R.id.button_quiz);
+        button_quiz.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+                try {
+                    Intent intent = new Intent(MainActivity.this, MainActivity3.class);
+                    startActivity(intent);finish();
+                } catch (Exception e) {
 
+                }
+            }
+        });
+
+        Button button_exit = (Button)findViewById(R.id.button_exit);
         button_exit.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {

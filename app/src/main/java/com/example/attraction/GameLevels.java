@@ -1,9 +1,11 @@
 package com.example.attraction;
 
 import android.annotation.SuppressLint;
+import android.app.Activity;
 import android.app.Dialog;
 import android.content.Intent;
 import android.content.SharedPreferences;
+import android.content.pm.ActivityInfo;
 import android.graphics.Color;
 import android.graphics.drawable.ColorDrawable;
 import android.os.Bundle;
@@ -39,6 +41,7 @@ public class GameLevels extends AppCompatActivity {
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
+        setRequestedOrientation(ActivityInfo.SCREEN_ORIENTATION_PORTRAIT);
         setContentView(R.layout.gamelavels);
 
         Window w = getWindow();
@@ -47,16 +50,16 @@ public class GameLevels extends AppCompatActivity {
         recyclerView = findViewById(R.id.recycelrView);
         recyclerView.setLayoutManager(new LinearLayoutManager(this));
 
-        arrayList.add(new Model(R.drawable.ratusha, "Могилёвская ратуша"));
-        arrayList.add(new Model(R.drawable.ratusha, "Могилёвская ратуша"));
-        arrayList.add(new Model(R.drawable.ratusha, "Могилёвская ратуша"));
-        arrayList.add(new Model(R.drawable.ratusha, "Могилёвская ратуша"));
-        arrayList.add(new Model(R.drawable.ratusha, "Могилёвская ратуша"));
-        arrayList.add(new Model(R.drawable.ratusha, "Могилёвская ратуша"));
-        arrayList.add(new Model(R.drawable.ratusha, "Могилёвская ратуша"));
-        arrayList.add(new Model(R.drawable.ratusha, "Могилёвская ратуша"));
-        arrayList.add(new Model(R.drawable.ratusha, "Могилёвская ратуша"));
-        arrayList.add(new Model(R.drawable.ratusha, "Могилёвская ратуша"));
+        arrayList.add(new Model(R.drawable.ratusha, "Могилёвская ратуша", "информация1"));
+        arrayList.add(new Model(R.drawable.ratusha, "Могилёвская ратуша", "информация2"));
+        arrayList.add(new Model(R.drawable.ratusha, "Могилёвская ратуша", "информация3"));
+        arrayList.add(new Model(R.drawable.ratusha, "Могилёвская ратуша", "информация4"));
+        arrayList.add(new Model(R.drawable.ratusha, "Могилёвская ратуша", "информация5"));
+        arrayList.add(new Model(R.drawable.ratusha, "Могилёвская ратуша", "информация6"));
+        arrayList.add(new Model(R.drawable.ratusha, "Могилёвская ратуша", "информация7"));
+        arrayList.add(new Model(R.drawable.ratusha, "Могилёвская ратуша", "информация8"));
+        arrayList.add(new Model(R.drawable.ratusha, "Могилёвская ратуша", "информация9"));
+        arrayList.add(new Model(R.drawable.ratusha, "Могилёвская ратуша", "информация10"));
 
         ModelRecycelrView modelRecycelrView = new ModelRecycelrView(this, arrayList);
         recyclerView.setAdapter(modelRecycelrView);

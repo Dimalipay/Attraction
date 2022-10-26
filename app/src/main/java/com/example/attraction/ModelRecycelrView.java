@@ -47,6 +47,7 @@ public class ModelRecycelrView extends RecyclerView.Adapter<ModelRecycelrView.Vi
                 Intent intent = new Intent(context, MainActivity2.class);
                 intent.putExtra("Image", arrayList.get(position).getImage());
                 intent.putExtra("Name", arrayList.get(position).getName());
+                intent.putExtra("Info", arrayList.get(position).getInfo());
                 context.startActivity(intent);
             }
         });
