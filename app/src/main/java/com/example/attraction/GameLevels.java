@@ -1,36 +1,18 @@
 package com.example.attraction;
 
 import android.annotation.SuppressLint;
-import android.app.Activity;
-import android.app.Dialog;
 import android.content.Intent;
-import android.content.SharedPreferences;
 import android.content.pm.ActivityInfo;
-import android.graphics.Color;
-import android.graphics.drawable.ColorDrawable;
 import android.os.Bundle;
-import android.view.LayoutInflater;
-import android.view.MenuItem;
 import android.view.View;
 import android.view.Window;
 import android.view.WindowManager;
 import android.widget.Button;
-import android.widget.ImageButton;
-import android.widget.ImageView;
-import android.widget.LinearLayout;
-import android.widget.PopupMenu;
-import android.widget.TextView;
-import android.widget.Toast;
-import android.view.MenuItem;
+
 import androidx.appcompat.app.AppCompatActivity;
 import androidx.recyclerview.widget.LinearLayoutManager;
 import androidx.recyclerview.widget.RecyclerView;
 import java.util.ArrayList;
-
-
-import androidx.annotation.NonNull;
-import androidx.appcompat.app.AppCompatActivity;
-import androidx.recyclerview.widget.LinearLayoutManager;
 
 public class GameLevels extends AppCompatActivity {
 
@@ -50,16 +32,16 @@ public class GameLevels extends AppCompatActivity {
         recyclerView = findViewById(R.id.recycelrView);
         recyclerView.setLayoutManager(new LinearLayoutManager(this));
 
-        arrayList.add(new Model(R.drawable.ratusha, "Могилёвская ратуша", "информация1"));
-        arrayList.add(new Model(R.drawable.ratusha, "Могилёвская ратуша", "информация2"));
-        arrayList.add(new Model(R.drawable.ratusha, "Могилёвская ратуша", "информация3"));
-        arrayList.add(new Model(R.drawable.ratusha, "Могилёвская ратуша", "информация4"));
-        arrayList.add(new Model(R.drawable.ratusha, "Могилёвская ратуша", "информация5"));
-        arrayList.add(new Model(R.drawable.ratusha, "Могилёвская ратуша", "информация6"));
-        arrayList.add(new Model(R.drawable.ratusha, "Могилёвская ратуша", "информация7"));
-        arrayList.add(new Model(R.drawable.ratusha, "Могилёвская ратуша", "информация8"));
-        arrayList.add(new Model(R.drawable.ratusha, "Могилёвская ратуша", "информация9"));
-        arrayList.add(new Model(R.drawable.ratusha, "Могилёвская ратуша", "информация10"));
+        arrayList.add(new Model(R.drawable.object_one, "Могилёвская ратуша", "информация1"));
+        arrayList.add(new Model(R.drawable.object_two, "Памятник Бобру", "информация2"));
+        arrayList.add(new Model(R.drawable.object_three, "Бобруйская крепость", "информация3"));
+        arrayList.add(new Model(R.drawable.object_four, "Костел Святого Станислава", "информация4"));
+        arrayList.add(new Model(R.drawable.object_five, "Буйничское поле", "информация5"));
+        arrayList.add(new Model(R.drawable.object_six, "Cвято-Никольский женский монастырь", "информация6"));
+        arrayList.add(new Model(R.drawable.object_seven, "Часовня в деревне Лесная", "информация7"));
+        arrayList.add(new Model(R.drawable.object_eight, "Площадь Звезд", "информация8"));
+        arrayList.add(new Model(R.drawable.object_nine, "Памятник-танк генералу Б.С.Бахарова", "информация9"));
+        arrayList.add(new Model(R.drawable.object_ten, "Скульптура Станционный смотритель", "информация10"));
 
         ModelRecycelrView modelRecycelrView = new ModelRecycelrView(this, arrayList);
         recyclerView.setAdapter(modelRecycelrView);

@@ -25,7 +25,7 @@
         android:layout_marginEnd="10dp"
         android:layout_marginBottom="20dp"
         android:contentDescription="@string/app_name"
-        android:src="@drawable/ratusha" />
+        android:src="@drawable/object_one" />
 
     <TextView
         android:id="@+id/CardName"
@@ -35,7 +35,7 @@
         android:layout_marginTop="40dp"
         android:paddingBottom="5dp"
         android:text="@string/attraction_1"
-        android:textSize="20sp"
+        android:textSize="18sp"
         android:textStyle="bold" />
 
 </androidx.cardview.widget.CardView>
