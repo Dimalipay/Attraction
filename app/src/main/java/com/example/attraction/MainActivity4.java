@@ -38,6 +38,16 @@ public class MainActivity4 extends AppCompatActivity {
         sliderItems.add(new SliderItems(R.drawable.object_eight));
         sliderItems.add(new SliderItems(R.drawable.object_nine));
         sliderItems.add(new SliderItems(R.drawable.object_ten));
+        sliderItems.add(new SliderItems(R.drawable.bobr));
+        sliderItems.add(new SliderItems(R.drawable.chas));
+        sliderItems.add(new SliderItems(R.drawable.kost));
+        sliderItems.add(new SliderItems(R.drawable.krep));
+        sliderItems.add(new SliderItems(R.drawable.mon));
+        sliderItems.add(new SliderItems(R.drawable.pol));
+        sliderItems.add(new SliderItems(R.drawable.smotr));
+        sliderItems.add(new SliderItems(R.drawable.zvezd));
+        sliderItems.add(new SliderItems(R.drawable.bober));
+
 
         viewPager2.setAdapter(new SliderAdapter(sliderItems,viewPager2));
 
