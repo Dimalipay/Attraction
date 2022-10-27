@@ -42,12 +42,11 @@ public class ModelRecycelrView extends RecyclerView.Adapter<ModelRecycelrView.Vi
         holder.cardView.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
-                Toast.makeText(context, "Name"+position, Toast.LENGTH_LONG).show();
-
                 Intent intent = new Intent(context, MainActivity2.class);
                 intent.putExtra("Image", arrayList.get(position).getImage());
                 intent.putExtra("Name", arrayList.get(position).getName());
                 intent.putExtra("Info", arrayList.get(position).getInfo());
+                intent.putExtra("Video", arrayList.get(position).getVideo_url());
                 context.startActivity(intent);
             }
         });

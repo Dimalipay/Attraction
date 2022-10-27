@@ -11,6 +11,8 @@
     <string name="title_name">Моя земля приднепровье</string>
     <string name="title_name_app">Моя земля</string>
     <string name="kratk_info">Об объекте</string>
+    <string name="video">Видео</string>
+    <string name="imageview">Галерея</string>
 
     <string name="attraction_1">Могилёвская ратуша</string>
     <string name="attraction_1_kr">тут должны быть краткая информация</string>
