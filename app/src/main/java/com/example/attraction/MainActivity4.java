@@ -7,9 +7,11 @@ import androidx.viewpager2.widget.CompositePageTransformer;
 import androidx.viewpager2.widget.MarginPageTransformer;
 import androidx.viewpager2.widget.ViewPager2;
 
+import android.content.Intent;
 import android.os.Bundle;
 import android.os.Handler;
 import android.view.View;
+import android.widget.Button;
 
 import java.util.ArrayList;
 import java.util.List;
@@ -23,6 +25,22 @@ public class MainActivity4 extends AppCompatActivity {
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_main4);
+
+        Button button_back = (Button) findViewById(R.id.button_back);
+        button_back.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+
+                // конструкция try - catch - это ловитель ошибок
+                try {
+                    Intent intent = new Intent(MainActivity4.this, MainActivity.class); //есть намерение перейти с Gamelevels в окно MainActivity
+                    startActivity(intent);
+                    finish(); //запуск процедуры перехода и команда finish закрывает текущее окно
+                } catch (Exception e) {
+
+                }
+            }
+        });
 
         viewPager2 = findViewById(R.id.viewPagerImageSlider);
 
